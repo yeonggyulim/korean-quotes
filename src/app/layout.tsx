@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     description: "한국어 명언을 랜덤으로 보여주는 웹앱입니다.",
     url: "https://korean-quotes.netlify.app/",
   },
+  verification: {
+    google: "0zb3O-_c81yqRYVLi9vm0yDq3rqW7iQcVnrCGdynCnI",
+  },
 };
 
 export default function RootLayout({
