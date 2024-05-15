@@ -11,6 +11,10 @@ const QuoteCard: React.FC<QuoteCardProps> = ({
   authorProfile,
   quote,
 }) => {
+  const handleButtonClick = () => {
+    window.location.reload();
+  };
+
   return (
     <div className="p-6">
       <p className="text-lg font-medium mb-4 text-center">{quote}</p>
@@ -22,6 +26,7 @@ const QuoteCard: React.FC<QuoteCardProps> = ({
         <button
           className="text-white font-bold py-2 px-4 rounded inline-block mt-4"
           style={{ backgroundColor: "#676767" }}
+          onClick={handleButtonClick}
         >
           다른 명언 보기
         </button>
