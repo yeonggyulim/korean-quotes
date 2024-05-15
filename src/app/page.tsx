@@ -2,7 +2,10 @@ import QuoteCard from "./components/QuoteCard";
 
 const Home: React.FC = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen text-white bg-gray-800">
+    <div
+      className="flex items-center justify-center min-h-screen text-white"
+      style={{ backgroundColor: "#212121" }}
+    >
       <QuoteCard
         author="author"
         authorProfile="author-profile"

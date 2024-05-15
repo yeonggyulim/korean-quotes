@@ -19,7 +19,10 @@ const QuoteCard: React.FC<QuoteCardProps> = ({
           <p className="font-semibold">{`- ${author} -`}</p>
           <p className="text-sm">{authorProfile}</p>
         </div>
-        <button className="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded inline-block mt-4">
+        <button
+          className="text-white font-bold py-2 px-4 rounded inline-block mt-4"
+          style={{ backgroundColor: "#676767" }}
+        >
           다른 명언 보기
         </button>
       </div>
