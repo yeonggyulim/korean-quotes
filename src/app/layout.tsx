@@ -3,8 +3,12 @@ import { Inter } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
 import "./globals.css";
+import GoogleAdsense from "./components/GoogleAdsense";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const GoogleAnalyticsID = "G-168VVRKCPB";
+const GoogleAdsenseID = "9862498556434831";
 
 export const metadata: Metadata = {
   title: "한국어 명언",
@@ -27,7 +31,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>
-      <GoogleAnalytics gaId="G-168VVRKCPB" />
+      <GoogleAnalytics gaId={GoogleAnalyticsID} />
+      <GoogleAdsense pId={GoogleAdsenseID} />
     </html>
   );
 }
