@@ -2,7 +2,7 @@ import Script from "next/script";
 
 const KaKaoAdFit: React.FC = () => {
   return (
-    <>
+    <div className="kakao-ad">
       <ins
         className="kakao_ad_area"
         style={{ display: "none" }}
@@ -15,7 +15,7 @@ const KaKaoAdFit: React.FC = () => {
         src="//t1.daumcdn.net/kas/static/ba.min.js"
         async
       ></Script>
-    </>
+    </div>
   );
 };
 
