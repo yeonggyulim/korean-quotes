@@ -5,6 +5,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import GoogleAdsense from "./components/GoogleAdsense";
 import KaKaoAdFit from "./components/KaKaoAdFit";
+import KakaoScript from "./components/KaKaoScript";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -35,6 +36,7 @@ export default function RootLayout({
         {children}
         <KaKaoAdFit />
       </body>
+      <KakaoScript />
       <GoogleAnalytics gaId={GoogleAnalyticsID} />
       <GoogleAdsense pId={GoogleAdsenseID} />
     </html>
