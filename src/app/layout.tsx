@@ -4,6 +4,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 
 import "./globals.css";
 import GoogleAdsense from "./components/GoogleAdsense";
+import KaKaoAdFit from "./components/KaKaoAdFit";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,7 +31,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <KaKaoAdFit />
+      </body>
       <GoogleAnalytics gaId={GoogleAnalyticsID} />
       <GoogleAdsense pId={GoogleAdsenseID} />
     </html>
